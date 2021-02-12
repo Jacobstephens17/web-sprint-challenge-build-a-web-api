@@ -44,19 +44,19 @@ A _"test"_ script already exists you can use to run tests against your code.
 
 #### Build an API
 
-- [ ] Inside `api/actions/actions-router.js` build endpoints for performing CRUD operations on _actions_:
-  - `[GET] /api/actions` returns an array of actions (or an empty array) as the body of the _response_.
-  - `[GET] /api/actions/:id` returns an action with the given `id` as the body of the _response_.
-  - `[POST] /api/actions` returns the newly created action as the body of the _response_.
-  - `[PUT] /api/actions/:id` returns the updated action as the body of the _response_.
-  - `[DELETE] /api/actions/:id` returns no _response_ body.
+- [1] Inside `api/actions/actions-router.js` build endpoints for performing CRUD operations on _actions_:
+  - 1 `[GET] /api/actions` returns an array of actions (or an empty array) as the body of the _response_.
+  - 1 `[GET] /api/actions/:id` returns an action with the given `id` as the body of the _response_.
+  - 1 `[POST] /api/actions` returns the newly created action as the body of the _response_.
+  - 1 `[PUT] /api/actions/:id` returns the updated action as the body of the _response_.
+  - 1 `[DELETE] /api/actions/:id` returns no _response_ body.
 
-- [ ] Inside `api/projects/projects-router.js` build endpoints for performing CRUD operations on _projects_:
-  - `[GET] /api/projects` returns an array of projects (or an empty array) as the body of the response.
-  - `[GET] /api/projects/:id` returns a project with the given `id` as the body of the _response_.
-  - `[POST] /api/projects` returns the newly created project as the body of the _response_.
-  - `[PUT] /api/projects/:id` returns the updated project as the body of the _response_.
-  - `[DELETE] /api/projects/:id` returns no _response_ body.
+- [1] Inside `api/projects/projects-router.js` build endpoints for performing CRUD operations on _projects_:
+  - 1 `[GET] /api/projects` returns an array of projects (or an empty array) as the body of the response.
+  - 1 `[GET] /api/projects/:id` returns a project with the given `id` as the body of the _response_.
+  - 1 `[POST] /api/projects` returns the newly created project as the body of the _response_.
+  - 1 `[PUT] /api/projects/:id` returns the updated project as the body of the _response_.
+  - 1 `[DELETE] /api/projects/:id` returns no _response_ body.
 
 - [ ] Inside `api/projects/projects-router.js` add an endpoint for retrieving the list of actions for a project:
   - `[GET] /api/projects/:id/actions` sends an array of actions (or an empty array) as the body of the response.
@@ -138,8 +138,17 @@ After finishing your required elements, you can push your work further. These go
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. The core features of Node.js and Express and why they are useful.
+1. The core features of Node.js and Express and why they are useful.    
+      Node/Express are javascript based, so interacting with a react app is much easier/effective/efficient for processes and developer interactions. It is a great way to dynamically display information based on interactions.
+
 1. Understand and explain the use of Middleware.
+      Middleware is basically a middle verification process of specified tasks to verify specified content.
+
 1. The basic principles of the REST architectural style.
+      Representational state transfer, the defining of endpoints and transfer of information between client and resource/backend
+
 1. Understand and explain the use of Express Routers.
+      Makes the code less bulky along with more readable/compartmentalized, based on set endpoints the router will route you to that place.
+
 1. Describe tooling used to manually test the correctness of an API.
+      I usually use postman, it is a way to simulate actions/requests from the front end to see if your endpoints are in fact working. 
